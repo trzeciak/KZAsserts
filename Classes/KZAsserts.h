@@ -6,11 +6,9 @@
 //  Copyright (c) 2013 Pixle. All rights reserved.
 //
 
+#pragma once
+
 #import <Foundation/Foundation.h>
-
-#ifndef KZAssertsIncluded
-
-#define KZAssertsIncluded true
 
 extern const NSUInteger KZAssertFailedAssertionCode;
 
@@ -86,4 +84,3 @@ do{} while(0)
 #define AssertTrueOrBreak(condition) AssertTrueOr(condition, break;)
 #define AssertTrueOrBreakBlock(condition, block) AssertTrueOr(condition, block(kza_error); break;)
 
-#endif
